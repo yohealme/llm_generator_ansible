@@ -1,0 +1,9 @@
+- name: 'Generated from request: Установить nginx на Ubuntu, включить и запустить
+    сервис'
+  hosts: webservers
+  become: true
+  gather_facts: false
+  tasks:
+  - name: Echo request
+    debug:
+      msg: Установить nginx на Ubuntu, включить и запустить сервис
